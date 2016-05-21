@@ -77,7 +77,7 @@ $( document ).ready(function() {
     var iso_shuffle = function() {
       $('.grid').isotope('shuffle');
       contador++;
-      if (contador > 10) {
+      if (contador > 25) {
         window.location.href = "/resultado.html";
       }
       console.log(contador);
