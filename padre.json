@@ -1,0 +1,32 @@
+{
+  "ganado0" : { "nombre" : "Pepe Buba",
+   "genotipo" : "g6egh0eb",
+   "sexo" : 1,
+   "calLeche" : 0.680657017953,
+   "calCarne" : 0.492774145202 
+  },
+   "ganado1" : { "nombre" : "Pisstu Bamba",
+   "genotipo" : "f1ai5jic",
+   "sexo" : 1,
+   "calLeche" : 0.479336114657,
+   "calCarne" : 0.0800584733388 
+  },
+   "ganado3" : { "nombre" : "Bures Abis",
+   "genotipo" : "a8103128",
+   "sexo" : 1,
+   "calLeche" : 0.723929259487,
+   "calCarne" : 0.232032099981 
+  },
+   "ganado246" : { "nombre" : "Abelino Abelino",
+   "genotipo" : "ae4b3351",
+   "sexo" : 1,
+   "calLeche" : 0.216736421141,
+   "calCarne" : 0.358767777959 
+  },
+   "ganado247" : { "nombre" : "Pitu Pecas",
+   "genotipo" : "8a290754",
+   "sexo" : 1,
+   "calLeche" : 0.0628272081138,
+   "calCarne" : 0.263056170332 
+  }
+}
