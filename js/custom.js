@@ -12,46 +12,46 @@ $( document ).ready(function() {
         var json = $.parseJSON(data);
         //now json variable contains data in json format
         //let's display a few items
+        var contador = 0;
         jQuery.each(json, function(key, ganado) {
-          console.log(ganado.nombre);
-          console.log(ganado.calCarne);
-          console.log(ganado.calLeche);
-          console.log(ganado.genoTipo);
-          var tipo = 'vaca';
-          var tipo_color = 'red';
-           
-          if (ganado.sexo == 0) {
-            
+          ganado.tipo = 'vaca';
+          ganado.tipo_color = 'red';
+          contador++;
+          if (contador == 20) {
+            return false;
           }
-          else {
-            
+          if (ganado.sexo == 1) {
+            ganado.tipo = 'toro';
+            ganado.tipo_color = 'navy';
           }
-          console.log(ganado.sexo);
-        });
+          
 
-        $('grid').append('<div class="element-item col-md-4 vacas">'+
-                  '<figure class="snip1174 red col-md-4">' +
-                  '<img src="images/vaca.jpg" alt="vaca" />' +
-                  '  <figcaption>' +
-                      '<h2 class="nombre">Alicia TT</h2>'+
-                      '<br>' +
-                      '<span class="genotipo">Genotipo: g6egh0eb</span><br>' +
-                      '<span class="calCarne">Cal. Carne: 0.492774145202</span><br>' +
-                      '<span class="calLeche">Cal. Leche: 0.680657017953</span><br>' +
-                      '<a href="/simular.html">Simular</a>' +
-                    '</figcaption>'+
-                  '</figure>'+
-              '</div>');
+          newItem = ('<div class="element-item col-md-4 ' + ganado.tipo +'">'+
+                    '<figure class="snip1174 ' + ganado.tipo_color + ' col-md-4">' +
+                    '<img src="images/' + ganado.tipo + '.jpg" alt="' + ganado.tipo + '" />' +
+                    '  <figcaption>' +
+                        '<h2 class="nombre">' + ganado.nombre + '</h2>'+
+                        '<br>' +
+                        '<span class="genotipo">Genotipo: ' + ganado.genotipo + '</span><br>' +
+                        '<span class="calCarne">Cal. Carne:' + ganado.calCarne + '</span><br>' +
+                        '<span class="calLeche">Cal. Leche: ' + ganado.calLeche + '</span><br>' +
+                        '<a href="/simular.html">Simular</a>' +
+                      '</figcaption>'+
+                    '</figure>'+
+                '</div>');
+          $('.grid').append(newItem);
+        });
+                    // init Isotope
+      $('.grid').isotope({
+        itemSelector: '.element-item',
+        layoutMode: 'fitRows'
+      });
         //$('#results').html('Plugin name: ' + json.name + '<br />Author: ' + json.author.name);
     }
   });
 
 
-  // init Isotope
-  var $grid = $('.grid').isotope({
-    itemSelector: '.element-item',
-    layoutMode: 'fitRows'
-  });
+
   // filter functions
 
   // bind filter button click
@@ -61,7 +61,7 @@ $( document ).ready(function() {
     var filterValue = $( this ).attr('data-filter');
     console.log(filterValue);
     // use filterFn if matches value
-    $grid.isotope({ filter: filterValue });
+    $('.grid').isotope({ filter: filterValue });
   });
   // change is-checked class on buttons
   $('.deep-genetic-filters').each( function( i, buttonGroup ) {
