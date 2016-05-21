@@ -12,7 +12,7 @@ $( document ).ready(function() {
         //now json variable contains data in json format
         //let's display a few items
         var contador = 0;
-        maximum = 5;
+        maximum = 2;
         minimum = 1;
         var randomNumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
         console.log(randomNumber);
@@ -51,10 +51,10 @@ $( document ).ready(function() {
         //now json variable contains data in json format
         //let's display a few items
         var contador = 0;
-        maximum = 5;
+        maximum = 2;
         minimum = 1;
         var randomNumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
-        console.log(randomNumber);
+        console.log(randomNumber);        
         jQuery.each(json, function(key, ganado) {
           contador++;
           if (randomNumber == contador) {
@@ -78,8 +78,6 @@ $( document ).ready(function() {
         });
      }
   });
-
-
 
   // filter functions
 
