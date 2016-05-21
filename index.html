@@ -19,7 +19,7 @@
     <link href="css/custom-styles.css" rel="stylesheet">
 
     <!-- CUSTOM JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/custom.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -44,19 +44,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">GRANJA PEDRO</a>
+                <a class="navbar-brand" href="/">GRANJA PEDRO</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav deep-genetic-filters">
                     <li>
-                        <a href="#" data-filter=".vacas">Vacas</a>
+                        <a href="/" data-filter=".element-item">Todos</a>
                     </li>
                     <li>
-                        <a href="#" data-filter=".toros">Toros</a>
+                        <a href="/" data-filter=".vacas">Vacas</a>
                     </li>
                     <li>
-                        <a href="#" data-filter=".vacas-celo">Vacas en Celo</a>
+                        <a href="/" data-filter=".toros">Toros</a>
+                    </li>
+                    <li>
+                        <a href="/" data-filter=".vacas-celo">Vacas en Celo</a>
                     </li>
                 </ul>
             </div>
@@ -68,90 +71,42 @@
     <!-- Page Content -->
     <div class="container">
         <!-- Title -->
-        <div class="row">
+       <!-- <div class="row">
             <div class="col-lg-12">
                 <h3>Vacas</h3>
             </div>
-        </div>
+        </div>-->
         <!-- /.row -->
 
         <!-- Page Features -->
-        <div class="row text-center">
-          <div class="services">
-          <div class="col-md-4">
-              <figure class="snip1174 navy col-md-4">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample33.jpg" alt="sq-sample33" />
-                <figcaption>
-                  <h2>Տեսականի</h2>
-                  <p>
-                    Մեր տեասկանին սպասում է Ձեզ
-                  </p>
-                  <a href="/main/page/production">Ավելին</a>
-                </figcaption>
-              </figure>
+          <div class="grid">
+              <div class="element-item col-md-4 vacas">
+                  <figure class="snip1174 red col-md-4">
+                    <img src="images/vaca.jpg" alt="vaca" />
+                    <figcaption>
+                      <h2 class="nombre">Alicia TT</h2>
+                      <br>
+                      <span class="genotipo">Genotipo: g6egh0eb</span><br>
+                      <span class="calCarne">Cal. Carne: 0.492774145202</span><br>
+                      <span class="calLeche">Cal. Leche: 0.680657017953</span><br>
+                      <a href="/simular.html">Simular</a>
+                    </figcaption>
+                  </figure>
+              </div>
+              <div class="element-item col-md-4 toros">
+                  <figure class="snip1174 navy col-md-4">
+                    <img src="images/toro.jpg" alt="toro" />
+                    <figcaption>
+                      <h2 class="nombre">TT TT</h2>
+                      <br>
+                      <span class="genotipo">Genotipo: g6egh0eb</span><br>
+                      <span class="calCarne">Cal. Carne: 0.492774145202</span><br>
+                      <span class="calLeche">Cal. Leche: 0.680657017953</span><br>
+                      <a href="/simular.html">Simular</a>
+                    </figcaption>
+                  </figure>
+              </div>
           </div>
-          <div class="col-md-4">
-              <figure class="snip1174 red col-md-4">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample33.jpg" alt="sq-sample33" />
-                <figcaption>
-                  <h2>Ակցիաներ</h2>
-                  <p>
-                    Թարմացվող ակցիաներ մեր հաճախորդների համար
-                  </p>
-                  <a href="/main/page/auction">Ավելին</a>
-                </figcaption>
-              </figure>
-          </div>
-          <div class="col-md-4">
-              <figure class="snip1174 navy col-md-4">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample33.jpg" alt="sq-sample33" />
-                <figcaption>
-                  <h2>Մեր մասին</h2>
-                  <p>
-                    Մեր ընկերության մաին ծանոթացեք այստեղ
-                  </p>
-                  <a href="/main/page/company">Ավելին</a>
-                </figcaption>
-              </figure>
-          </div>
-          <div class="col-md-4">
-              <figure class="snip1174 red col-md-4">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample33.jpg" alt="sq-sample33" />
-                <figcaption>
-                  <h2>Բաղադրատոմսեր</h2>
-                  <p>
-                    Պատրաստման հարցում Դուք ունեք Ձեր խորհրդատուն
-                  </p>
-                  <a href="/main/page/recipe">Ավելին</a>
-                </figcaption>
-              </figure>
-          </div>
-          <div class="col-md-4">
-              <figure class="snip1174 navy col-md-4">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample33.jpg" alt="sq-sample33" />
-                <figcaption>
-                  <h2>Խանութների ցանկ</h2>
-                  <p>
-                    Մեր խանութների ցանկին այստեղ
-                  </p>
-                  <a href="/main/page/map">Ավելին</a>
-                </figcaption>
-              </figure>
-          </div>
-          <div class="col-md-4">
-              <figure class="snip1174 red col-md-4">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample33.jpg" alt="sq-sample33" />
-                <figcaption>
-                  <h2>Նորություններ</h2>
-                  <p>
-                    Ծանոթացեք մեր նորություններին այստեղ
-                  </p>
-                  <a href="/main/page/news">Ավելին</a>
-                </figcaption>
-              </figure>
-          </div>
-        </div>
-        </div>
         <!-- /.row -->
 
         <hr>
