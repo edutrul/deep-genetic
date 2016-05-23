@@ -30,7 +30,7 @@ $( document ).ready(function() {
                           '<span class="genotipo">Genotipo: ' + ganado.genotipo + '</span><br>' +
                           '<span class="calCarne">Cal. Carne:' + ganado.calCarne + '</span><br>' +
                           '<span class="calLeche">Cal. Leche: ' + ganado.calLeche + '</span><br>' +
-                          '<a href="/simular.html" target="_blank">Simular</a>' +
+                          '<a href="/" target="_blank">Simular</a>' +
                         '</figcaption>'+
                       '</figure>'+
                   '</div>');
@@ -69,7 +69,7 @@ $( document ).ready(function() {
                           '<span class="genotipo">Genotipo: ' + ganado.genotipo + '</span><br>' +
                           '<span class="calCarne">Cal. Carne:' + ganado.calCarne + '</span><br>' +
                           '<span class="calLeche">Cal. Leche: ' + ganado.calLeche + '</span><br>' +
-                          '<a href="/simular.html" target="_blank">Simular</a>' +
+                          '<a href="/" target="_blank">Simular</a>' +
                         '</figcaption>'+
                       '</figure>'+
                   '</div>');
